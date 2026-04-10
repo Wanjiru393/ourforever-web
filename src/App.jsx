@@ -1,4 +1,11 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  return null
+}
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import InvitationShowcase from './components/InvitationShowcase/InvitationShowcase'
@@ -46,7 +53,9 @@ function LandingPage() {
 
 export default function App() {
   return (
-    <Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/invite/:slug" element={<InvitationPage />} />
       <Route path="/admin/login" element={<AdminLogin />} />
@@ -58,5 +67,6 @@ export default function App() {
       <Route path="/save-the-date/view" element={<SaveTheDateView />} />
       <Route path="/open/:slug" element={<EnvelopePage />} />
     </Routes>
+    </>
   )
 }

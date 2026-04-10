@@ -347,6 +347,15 @@
   padding: 0 .4rem;
 }
 
+@media(max-width: 500px) {
+  .programScroll { padding: 0 1rem 1rem; }
+  .programStep { width: 100px; }
+  .programIcon { width: 56px; height: 56px; font-size: 1.1rem; }
+  .programTitle { font-size: .82rem; }
+  .programDesc { font-size: .68rem; }
+  .programTime { font-size: .65rem; padding: .2rem .5rem; }
+}
+
 /* ── Event details ── */
 .eventCard {
   background: var(--inv-soft);

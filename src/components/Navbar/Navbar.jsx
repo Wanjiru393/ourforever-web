@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <header className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`} id="navBar">
-      <Link to="/" className={styles.logo} aria-label="Our Forever logo">Our Forever</Link>
+      <Link to="/" className={styles.logo} aria-label="Our Forever logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Our Forever</Link>
 
       <nav className={styles.links} aria-label="Main Navigation">
         <a href={a('#invitations')}>Themes</a>
