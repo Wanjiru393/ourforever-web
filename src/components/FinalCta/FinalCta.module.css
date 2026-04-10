@@ -1,0 +1,7 @@
+.finalCta { padding: 96px 0; text-align: center; background: radial-gradient(ellipse at center, rgba(42,109,181,.06) 0%, transparent 70%); border-top: 1px solid var(--border); }
+.container { max-width: 680px; margin: 0 auto; padding: 0 1rem; }
+.sparkle { color: var(--accent); letter-spacing: .5rem; margin-bottom: 1.5rem; font-size: 1rem; }
+.title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); margin: 0 0 1rem; line-height: 1.2; }
+.subtitle { font-family: 'Jost', sans-serif; color: var(--muted); font-size: 1rem; line-height: 1.7; max-width: 540px; margin: 0 auto 2rem; }
+.ctaRow { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.contact { margin-top: 2rem; font-family: 'Jost', sans-serif; font-size: .85rem; color: var(--muted); }

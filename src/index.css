@@ -1,0 +1,75 @@
+:root {
+  --bg: #B3CFE5;
+  --bg-soft: #DEEEF8;
+  --text: #0A1931;
+  --muted: rgba(10,25,49,0.55);
+  --accent: #1A3D63;
+  --accent-soft: rgba(26,61,99,0.1);
+  --rose: #4A7FA7;
+  --card: rgba(74,127,167,0.08);
+  --border: rgba(74,127,167,0.2);
+  --grain-opacity: 0.03;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: 'Jost', system-ui, -apple-system, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+.container { max-width: 1120px; margin: 0 auto; padding: 0 1rem; }
+.section { padding: 72px 0; position: relative; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.grid-gap { gap: 1.25rem; }
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .grid-3, .grid-4, .grid-2 { grid-template-columns: 1fr; }
+}
+
+/* Global helpers */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+.playfair { font-family: 'Playfair Display', serif; }
+.jost { font-family: 'Jost', sans-serif; }
+.accent { color: var(--accent); }
+.card { background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.12); border-radius: 8px; padding: 16px; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-family: 'Jost', sans-serif;
+  font-size: .88rem;
+  font-weight: 500;
+  letter-spacing: .08em;
+  cursor: pointer;
+  border: none;
+  transition: background .2s, color .2s, box-shadow .2s;
+  text-decoration: none;
+  line-height: 1;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+.btn-primary:hover { background: #244d7a; box-shadow: 0 0 18px rgba(26,61,99,.3); }
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+.btn-outline:hover { background: var(--accent-soft); }
+
+/* Animations */
+@keyframes grainMove { from { transform: translate3d(0,0,0); } to { transform: translate3d(-10px,-8px,0); } }
+@keyframes pulse { 0% { transform: translateY(0); opacity: .95;} 50% { transform: translateY(6px); opacity: 1; } 100% { transform: translateY(0); opacity:.95;} }

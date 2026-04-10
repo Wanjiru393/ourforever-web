@@ -1,0 +1,37 @@
+.section { padding: 72px 0; }
+.container { max-width: 1120px; margin: 0 auto; padding: 0 1rem; }
+.sectionLabel { font-family: 'Playfair Display', serif; color: var(--accent); margin-bottom: 8px; }
+.title { font-family: 'Playfair Display', serif; font-size: 2rem; margin: 8px 0 16px; }
+.title em { font-style: italic; }
+
+.track { display: flex; overflow-x: auto; gap: 22px; padding: 1rem 0; scrollbar-width: thin; scrollbar-color: var(--accent) transparent; }
+.track::-webkit-scrollbar { height: 4px; }
+.track::-webkit-scrollbar-thumb { background: var(--accent-soft); border-radius: 2px; }
+
+.cardItem {
+  width: 240px;
+  height: 360px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(122,178,232,.06);
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(7,10,26,.75));
+  opacity: 0;
+  transition: opacity .25s;
+  display: flex;
+  align-items: flex-end;
+  padding: 14px;
+}
+.cardItem:hover .overlay { opacity: 1; }
+.overlayTitle { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--accent); }
+
+.placeholder { padding: 3rem 0; color: var(--muted); font-family: 'Jost', sans-serif; font-size: .95rem; }
+.empty { padding: 3rem 0; color: var(--muted); font-family: 'Jost', sans-serif; font-size: .95rem; }
+.empty p { margin: 0; }

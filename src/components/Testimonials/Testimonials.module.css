@@ -1,0 +1,9 @@
+.section { padding: 72px 0; }
+.container { max-width: 1120px; margin: 0 auto; padding: 0 1rem; }
+.sectionLabel { font-family: 'Playfair Display', serif; color: var(--accent); }
+.title { font-family: 'Playfair Display', serif; font-size: 2rem; }
+.track { display: flex; gap: 20px; overflow: hidden; }
+.card { width: 320px; background: #fff; border: 1px solid var(--border); padding: 20px; color: var(--text); border-radius: 8px; box-shadow: 0 2px 12px rgba(14,23,38,.06); }
+.stars { color: var(--accent); margin-bottom: 6px; }
+.quote { font-family: 'Playfair Display', serif; font-style: italic; color: var(--text); }
+.person { font-family: 'Jost', sans-serif; font-size: .8rem; color: var(--accent); margin-top: 6px; }

@@ -1,0 +1,139 @@
+.section {
+  padding: 5rem 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.label {
+  font-family: 'Jost', sans-serif;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  color: var(--accent);
+  margin-bottom: .75rem;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--text);
+  margin: 0 0 .75rem;
+  line-height: 1.2;
+}
+.title em { font-style: italic; color: var(--accent); }
+
+.sub {
+  font-family: 'Jost', sans-serif;
+  font-size: .95rem;
+  color: var(--muted);
+  margin: 0 0 3rem;
+}
+
+/* Scrollable card track */
+.track {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.track::-webkit-scrollbar { display: none; }
+
+.card {
+  flex: 0 0 200px;
+  min-height: 300px;
+  border-radius: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  scroll-snap-align: start;
+  border: 1px solid rgba(255,255,255,.08);
+  transition: transform .25s, box-shadow .25s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,.4);
+}
+.soon { opacity: .55; }
+
+.badge {
+  position: absolute;
+  top: .75rem; left: .75rem;
+  background: var(--accent);
+  color: #06091a;
+  font-family: 'Jost', sans-serif;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  padding: .25rem .65rem;
+  border-radius: 20px;
+}
+
+.soonIcon {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -80%);
+  font-size: 2rem;
+  opacity: .4;
+}
+
+.cardBody {
+  padding: 1.25rem 1rem 1.5rem;
+  background: linear-gradient(to top, rgba(0,0,0,.7) 0%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  align-items: flex-start;
+}
+
+.cardName {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.cardDesc {
+  font-family: 'Jost', sans-serif;
+  font-size: .75rem;
+  color: rgba(238,241,247,.65);
+  margin: 0;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.demoBtn {
+  margin-top: .5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 20px;
+  padding: .35rem .9rem;
+  font-family: 'Jost', sans-serif;
+  font-size: .75rem;
+  color: #fff;
+  text-decoration: none;
+  transition: background .2s;
+  backdrop-filter: blur(4px);
+}
+.demoBtn:hover { background: rgba(255,255,255,.22); }
+
+.demoBtnDisabled {
+  margin-top: .5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: .35rem .9rem;
+  font-family: 'Jost', sans-serif;
+  font-size: .75rem;
+  color: rgba(255,255,255,.3);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 20px;
+}

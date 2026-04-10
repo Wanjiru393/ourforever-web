@@ -1,0 +1,10 @@
+.section { padding: 72px 0; }
+.container { max-width: 1120px; margin: 0 auto; padding: 0 1rem; }
+.sectionLabel { font-family: 'Playfair Display', serif; color: var(--accent); margin-bottom: 8px; font-size: .9rem; }
+.title { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 3vw, 2rem); margin: 8px 0 2rem; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; align-items: stretch; }
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+.step { padding: 28px 20px 24px; border:1px solid var(--border); border-radius:8px; background: var(--bg-soft); min-height:200px; position: relative; overflow: visible; box-shadow: 0 2px 8px rgba(14,23,38,.07); }
+.stepNum { font-family: 'Playfair Display', serif; font-size: 3rem; color: rgba(42,109,181,.12); position: absolute; top: 8px; right: 14px; line-height: 1; }
+.stepTitle { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--text); margin: 0 0 8px; }
+.stepDesc { font-family: 'Jost', sans-serif; font-size:.88rem; color: var(--muted); line-height:1.7; margin: 0; }

@@ -1,0 +1,68 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+}
+
+.card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: var(--text);
+  text-align: center;
+  margin: 0 0 .5rem;
+}
+
+.sub {
+  font-family: 'Jost', sans-serif;
+  font-size: .85rem;
+  color: var(--muted);
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.field { display: flex; flex-direction: column; gap: .4rem; }
+.field label {
+  font-family: 'Jost', sans-serif;
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--muted);
+}
+.field input {
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 11px 14px;
+  color: var(--text);
+  font-family: 'Jost', sans-serif;
+  font-size: .95rem;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color .2s;
+}
+.field input:focus { border-color: var(--accent); }
+
+.error {
+  font-family: 'Jost', sans-serif;
+  font-size: .88rem;
+  color: var(--rose);
+  margin: 0;
+  text-align: center;
+}

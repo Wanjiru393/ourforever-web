@@ -1,0 +1,143 @@
+.page {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Jost', sans-serif;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 2rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-soft);
+}
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: var(--text);
+}
+
+.signout {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: .45rem 1rem;
+  color: var(--muted);
+  font-family: 'Jost', sans-serif;
+  font-size: .85rem;
+  cursor: pointer;
+  transition: border-color .2s, color .2s;
+}
+.signout:hover { border-color: var(--accent); color: var(--accent); }
+
+.content { padding: 2rem; max-width: 900px; margin: 0 auto; }
+
+.pageTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin: 0 0 1.75rem;
+  color: var(--text);
+}
+
+.invitationCard {
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+}
+
+.invitationHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  transition: background .15s;
+}
+.invitationHeader:hover { background: rgba(255,255,255,.03); }
+
+.invitationName {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--text);
+  margin: 0;
+}
+
+.invitationMeta {
+  font-size: .82rem;
+  color: var(--muted);
+  margin-top: .2rem;
+}
+
+.badge {
+  display: flex;
+  gap: .6rem;
+  align-items: center;
+}
+
+.pill {
+  padding: .3rem .75rem;
+  border-radius: 20px;
+  font-size: .8rem;
+  font-weight: 500;
+  background: rgba(122,178,232,.12);
+  border: 1px solid rgba(122,178,232,.25);
+  color: var(--accent);
+}
+
+.chevron {
+  color: var(--muted);
+  font-size: .85rem;
+  margin-left: .5rem;
+}
+
+.rsvpTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .88rem;
+}
+
+.rsvpTable thead tr {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,.02);
+}
+
+.rsvpTable th {
+  text-align: left;
+  padding: .65rem 1.5rem;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.rsvpTable td {
+  padding: .75rem 1.5rem;
+  color: var(--text);
+  border-bottom: 1px solid rgba(255,255,255,.04);
+}
+
+.rsvpTable tr:last-child td { border-bottom: none; }
+
+.attending { color: #6ee7b7; }
+.declining { color: var(--rose, #f87171); }
+
+.empty {
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: .9rem;
+  border-top: 1px solid var(--border);
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem;
+  color: var(--muted);
+}

@@ -1,0 +1,11 @@
+.section { padding: 72px 0; }
+.container { max-width: 760px; margin: 0 auto; padding: 0 1rem; }
+.sectionLabel { font-family: 'Playfair Display', serif; color: var(--accent); margin-bottom: 8px; font-size: .9rem; }
+.title { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 3vw, 2rem); margin: 8px 0 2rem; }
+.list { display: flex; flex-direction: column; gap: .75rem; }
+.item { border: 1px solid var(--border); border-radius: 8px; background: var(--card); overflow: hidden; transition: border-color .2s; }
+.item.open { border-color: rgba(122,178,232,.4); }
+.q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 1rem; background: transparent; border: none; color: var(--text); font-family: 'Jost', sans-serif; font-size: 1rem; padding: 18px 20px; cursor: pointer; text-align: left; }
+.q:hover { color: var(--accent); }
+.icon { font-size: 1.4rem; color: var(--accent); flex-shrink: 0; }
+.a { padding: 0 20px 18px; font-family: 'Jost', sans-serif; font-size: .9rem; color: var(--muted); line-height: 1.7; }
